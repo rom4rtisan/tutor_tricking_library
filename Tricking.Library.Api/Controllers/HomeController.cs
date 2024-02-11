@@ -9,7 +9,7 @@ namespace Tricking.Library.Api.Controllers
         [HttpGet]
         public string Index()
         {
-            string greeting = "Hello world";
+            string greeting = "Hello world!!!";
 
             return greeting;
         }
