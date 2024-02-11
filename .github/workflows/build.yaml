@@ -1,10 +1,6 @@
 name: Build My App
 
-on:
-  push:
-    branches: [ $default-branch ]
-  pull_request:
-    branches: [ $default-branch ]
+on: push
 
 jobs:
   build:
@@ -12,8 +8,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-
       - name: Print Current Directory
         run: pwd
 
