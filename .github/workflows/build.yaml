@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Pull code
+        uses: actions/checkout@v4
+
       - name: Print Current Directory
         run: pwd
 
